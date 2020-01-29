@@ -14,12 +14,6 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-
-- task: CmdLine@2
-  inputs:
-    script: 'echo Setting up the working Directory'
-    workingDirectory: '$(Build.SourcesDirectory)/app'
-    failOnStderr: true
     
 - script: |
     npm install
