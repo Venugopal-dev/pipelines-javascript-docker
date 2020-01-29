@@ -16,6 +16,5 @@ steps:
   displayName: 'Install Node.js'
     
 - script: |
-      npm --prefix '$(Build.SourcesDirectory)/app' install
-      npm run --prefix '$(Build.SourcesDirectory)/app' build
+      npm --prefix '$(Build.SourcesDirectory)/app' install      
   displayName: 'npm install and build'
