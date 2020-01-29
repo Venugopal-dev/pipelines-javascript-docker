@@ -12,7 +12,7 @@ variables:
   azureSubscription: '9efd5978-29ae-49ac-8e63-5c7d21805b6d'
   
   # Web app name
-  webAppName: 'azurepipelineapp'
+  webAppName: 'theazurepipelineapp'
   
   # Environment name
   environmentName: 'dev'
