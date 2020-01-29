@@ -15,16 +15,12 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- task: AzurePowerShell@5
+- task: CmdLine@2
   inputs:
-    azureSubscription: 'Visual Studio Enterprise (4234ead3-b8a0-46c3-a55b-468d8f5bf69c)'
-    ScriptType: 'InlineScript'
-    Inline: |
-      # You can write your azure powershell scripts inline here. 
-      # You can also pass predefined and custom variables to this script using arguments
-      
-      cd app
-    azurePowerShellVersion: 'LatestVersion'
+    script: 'echo Setting up the working Directory'
+    workingDirectory: '/app'
+    failOnStderr: true
+    
 - script: |
     npm install
     npm run build
