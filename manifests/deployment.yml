@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: venugopaldevpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: venugopaldevpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: venugopaldevpipelinesjavascriptdocker 
+          image: ak8appcontainerregistry.azurecr.io/venugopaldevpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
